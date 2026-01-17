@@ -7,12 +7,13 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 
 ### 🛣️ [RUTE 0 — FOUNDATION](./00-foundation/)
 > **Target:** Ngerti Google Cloud & siap ngoding/deploy.
-**Status:** 🟡 On Going
+**Status:** 🟢 Completed
 - [v] 01. The Basics of Google Cloud Compute
-- [ ] 02. Configure Service Accounts and IAM Roles
+- [v] 02. Configure Service Accounts and IAM Roles
 
 ### 🛣️ [RUTE 1 — WEB BACKEND & SERVERLESS](./01-web-backend-serverless/)
 > **Target:** Bisa bikin & deploy backend web (API, Serverless, Logs).
+**Status:** 🟡 On Going
 - [ ] 01. Develop Serverless Applications on Cloud Run
 - [ ] 02. Cloud Run Functions: 3 Ways
 - [ ] 03. Use APIs to Work with Cloud Storage
