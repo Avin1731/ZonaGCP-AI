@@ -8,7 +8,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 ### 🛣️ [RUTE 0 — FOUNDATION](./00-foundation/)
 > **Target:** Ngerti Google Cloud & siap ngoding/deploy.
 **Status:** 🟡 On Going
-- [ ] 01. The Basics of Google Cloud Compute
+- [v] 01. The Basics of Google Cloud Compute
 - [ ] 02. Configure Service Accounts and IAM Roles
 
 ### 🛣️ [RUTE 1 — WEB BACKEND & SERVERLESS](./01-web-backend-serverless/)

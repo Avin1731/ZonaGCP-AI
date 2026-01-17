@@ -1,73 +1,90 @@
-# ☁️ [Judul Lab / Materi Sesuai Judul di Qwiklabs]
+# ☁️ The Basics of Google Cloud Compute: Challenge Lab
 
-**Rute:** [Contoh: Rute 0 - Foundation]
-**Topik:** [Contoh: Compute Engine, Nginx, IAM, Cloud Storage]
-**Tanggal Pengerjaan:** [Tanggal Hari Ini]
+**Rute:** Rute 0 — Foundation
+**Topik:** Compute Engine, Cloud Storage, Persistent Disk, Nginx
+**Tanggal Pengerjaan:** 17 Januari 2026
 
 ---
 
 ## 🎯 1. Overview & Tujuan
-Lab ini bertujuan untuk memahami cara [Tuliskan tujuan singkat dengan bahasa sendiri, misal: membuat VM dan menginstall web server].
+Lab ini bertujuan untuk menguji pemahaman dasar tentang infrastruktur Google Cloud dengan cara membangun server web sederhana yang memiliki penyimpanan terpisah dan file storage.
 
 **Misi Utama:**
-1. [Misi 1: Misal, Membuat Bucket]
-2. [Misi 2: Misal, Setup VM]
-3. [Misi 3: Misal, Konfigurasi IAM]
+1. Membuat Cloud Storage Bucket (untuk menyimpan file).
+2. Membuat VM Instance dengan Persistent Disk tambahan (untuk server & storage).
+3. Menginstall Nginx Web Server via SSH.
 
 ---
 
 ## 🛠️ 2. Langkah-Langkah & Solusi
 
-### 🔹 Task 1: [Nama Task Sesuai Lab]
-* **Deskripsi:** [Jelaskan apa yang dilakukan secara singkat]
+**Konfigurasi Global:**
+* **Region:** `europe-west4`
+* **Zone:** `europe-west4-b`
+
+### 🔹 Task 1: Create a Cloud Storage bucket
+* **Deskripsi:** Membuat bucket penyimpanan dengan nama unik yang sudah ditentukan.
 * **Konfigurasi GUI:**
-  * Menu: `[Nama Menu, misal: Compute Engine > VM Instances]`
-  * Setting A: `[Value, misal: e2-medium]`
-  * Setting B: `[Value, misal: us-central1]`
+  * Menu: `Cloud Storage > Buckets > Create`
+  * Name: `qwiklabs-gcp-01-63fef0cd2e00-bucket`
+  * Location Type: `Multi-region`
+  * Location: `US` (Sesuai instruksi khusus task, walaupun default lab di Europe)
 
-### 🔹 Task 2: [Nama Task Sesuai Lab]
+### 🔹 Task 2: Create and attach a persistent disk to a Compute Engine instance
+**Langkah A: Membuat VM Instance**
+* **Konfigurasi GUI:**
+  * Menu: `Compute Engine > VM instances > Create Instance`
+  * Name: `my-instance`
+  * Region: `europe-west4`
+  * Zone: `europe-west4-b`
+  * Series: `E2`
+  * Machine type: `e2-medium`
+  * Boot disk: `Debian GNU/Linux 12 (bookworm)`, Type `Balanced persistent disk`, Size `10 GB`
+  * Firewall: Centang `Allow HTTP traffic`
+  * **Klik Create**
+
+**Langkah B: Membuat Persistent Disk**
+* **Konfigurasi GUI:**
+  * Menu: `Compute Engine > Disks > Create Disk`
+  * Name: `mydisk`
+  * Region: `europe-west4`
+  * Zone: `europe-west4-b` (**Wajib sama** dengan Zone VM)
+  * Size: `200 GB`
+  * **Klik Create**
+
+**Langkah C: Attach Disk ke VM**
+* **Langkah:**
+  1. Kembali ke menu `VM instances`.
+  2. Klik nama VM `my-instance`, lalu klik **Edit**.
+  3. Scroll ke bagian **Additional disks**.
+  4. Klik **+ ATTACH EXISTING DISK**.
+  5. Pilih `mydisk`.
+  6. Scroll ke bawah dan klik **Save**.
+
+### 🔹 Task 3: Install a NGINX web server
 * **Perintah CLI / Script:**
-  *(Jalankan perintah berikut di Cloud Shell / SSH)*
+  *(Masuk ke SSH `my-instance` lalu jalankan perintah berikut)*
 ```bash
-  # [Komentar singkat tentang command ini]
-  [Paste command code di sini]
+  # 1. Update repository OS
+  sudo apt update
 
-  # Contoh:
-  # sudo apt update
-  # sudo apt install nginx -y
+  # 2. Install Nginx Web Server
+  sudo apt install nginx -y
 ```
-### 🔹 Task 3: [Nama Task Sesuai Lab]
-Langkah:
+## 🐛 3. Troubleshooting / Masalah yang Dihadapi
+Error: Disk mydisk tidak muncul saat mau di-attach ke VM.
 
-[Langkah 1]
-
-[Langkah 2]
-
-[Langkah 3]
-
-(Tambahkan Task lain sesuai kebutuhan)
-
-### 🐛 3. Troubleshooting / Masalah yang Dihadapi
-(Bagian ini opsional, isi jika menemukan error)
-
-Error: [Tulis pesan error yang muncul]
-
-Penyebab: [Analisa kenapa error, misal: Salah region atau typo command]
+Penyebab: Zone Disk berbeda dengan Zone VM (Misal VM di europe-west4-b, tapi Disk dibuat di europe-west4-a).
 
 Solusi:
 
-[Jelaskan cara kamu memperbaikinya]
+Hapus Disk yang salah, lalu buat ulang Disk baru dengan memastikan Zone sama persis dengan VM (europe-west4-b).
 
-### 📝 4. Catatan Penting (Key Takeaways)
+## 📝 4. Catatan Penting (Key Takeaways)
 Hal-hal baru yang saya pelajari dari lab ini:
 
-[Poin 1: Misal, Ternyata VM tidak bisa diakses kalau firewall belum dibuka]
+Region vs Zone: Disk fisik harus berada di Zone yang sama dengan Komputernya (VM) agar bisa dicolok (attach).
 
-[Poin 2: Misal, Bucket name harus unik secara global]
+Exception Rule: Meskipun lab meminta default di europe-west4, instruksi Bucket meminta US multi-region. Instruksi spesifik per-task mengalahkan instruksi general.
 
-[Poin 3]
-
-### 📸 5. Bukti Penyelesaian (Screenshot)
-(Opsional: Tempel screenshot hasil akhir di sini, misal tampilan web yang berhasil diakses atau skor 100/100)
-
-![Hasil Akhir]([Path ke gambar, atau biarkan kosong jika belum ada])
+Web Server: Menginstall Nginx mengubah VM biasa menjadi Web Server yang bisa diakses via External IP.
