@@ -88,3 +88,7 @@ Region vs Zone: Disk fisik harus berada di Zone yang sama dengan Komputernya (VM
 Exception Rule: Meskipun lab meminta default di europe-west4, instruksi Bucket meminta US multi-region. Instruksi spesifik per-task mengalahkan instruksi general.
 
 Web Server: Menginstall Nginx mengubah VM biasa menjadi Web Server yang bisa diakses via External IP.
+
+---
+
+[⬅️ Kembali ke Menu Utama](../README.md)

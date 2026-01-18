@@ -219,4 +219,4 @@ Hal-hal baru yang saya pelajari dari lab ini:
 
 ---
 
-[⬅️ Kembali ke Menu Utama](https://www.google.com/search?q=../../README.md)
+[⬅️ Kembali ke Menu Utama](../README.md)
