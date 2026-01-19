@@ -74,6 +74,17 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 - [ ] 06. Vertex AI Search for Commerce
 
 ---
+
+### 🛣️ [RUTE 9 — AI PRODUCTIVITY & ASSIST TOOLS](./09-ai-productivity-assist/)
+
+> **Target:** Maksimalkan produktivitas developer & workflow dengan AI assistive tools.
+
+* [ ] 01. Agent Assist and its Gen AI Capabilities
+* [ ] 02. AI Boost Bites: Automate Tasks with Gemini and Apps Script
+* [ ] 03. Streamline App Development with Gemini Code Assist
+
+---
+
 <p align="center">
   Dibuat oleh <br>
   <a href="https://github.com/Avin1731">
