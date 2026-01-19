@@ -16,7 +16,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 **Status:** 🟡 On Going
 - [v] 01. Develop Serverless Applications on Cloud Run
 - [ ] 02. Cloud Run Functions: 3 Ways
-- [ ] 03. Use APIs to Work with Cloud Storage
+- [v] 03. Use APIs to Work with Cloud Storage
 - [ ] 04. Monitoring in Google Cloud
 - [ ] 05. Monitor and Log with Google Cloud Observability
 

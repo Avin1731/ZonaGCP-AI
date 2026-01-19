@@ -1,4 +1,4 @@
-# ☁️ Develop Serverless Applications on Cloud Run
+# ☁️ Develop Serverless Applications on Cloud Run: Challenge Lab
 
 **Rute:** Rute 1 — Web Backend & Serverless
 **Topik:** Cloud Run, Cloud Build, Container Registry, IAM Service Accounts
