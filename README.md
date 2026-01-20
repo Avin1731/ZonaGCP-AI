@@ -15,7 +15,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 > **Target:** Bisa bikin & deploy backend web (API, Serverless, Logs).
 **Status:** 🔴 Stoped
 - [x] 01. Develop Serverless Applications on Cloud Run
-- [] 02. Cloud Run Functions: 3 Ways
+- [ ] 02. Cloud Run Functions: 3 Ways
 - [x] 03. Use APIs to Work with Cloud Storage
 - [x] 04. Monitoring in Google Cloud
 - [x] 05. Monitor and Log with Google Cloud Observability
@@ -27,7 +27,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 - [x] 02. Prompt Design in Vertex AI
 - [ ] 03. Enhance Gemini Model Capabilities
 - [ ] 04. Develop Gen AI Apps with Gemini and Streamlit
-- [ ] 05. Build Real World AI Applications with Gemini and Imagen
+- [x] 05. Build Real World AI Applications with Gemini and Imagen
 - [ ] 06. Kickstarting Application Development with Gemini Code Assist
 
 ### 🛣️ [RUTE 3 — VECTOR SEARCH & RAG](./03-vector-search-rag/)

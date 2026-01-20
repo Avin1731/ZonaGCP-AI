@@ -11,7 +11,7 @@ Ini rute PALING KRUSIAL setelah backend untuk membangun Chatbot, Text & image ge
 - [x] [02. Prompt Design in Vertex AI](./2-Prompt-Design-in-Vertex-AI/)
 - [ ] [03. Enhance Gemini Model Capabilities](./3-Enhance-Gemini-Model-Capabilities/)
 - [ ] [04. Develop Gen AI Apps with Gemini and Streamlit](./4-Develop-Gen-AI-Apps-with-Gemini-and-Streamlit/)
-- [ ] [05. Build Real World AI Applications with Gemini and Imagen](./5-Build-Real-World-AI-Applications-with-Gemini-and-Imagen/)
+- [x] [05. Build Real World AI Applications with Gemini and Imagen](./5-Build-Real-World-AI-Applications-with-Gemini-and-Imagen/)
 - [ ] [06. Kickstarting Application Development with Gemini Code Assist](./6-Kickstarting-Application-Development-with-Gemini-Code-Assist/)
 
 ---
