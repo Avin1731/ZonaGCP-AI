@@ -67,7 +67,6 @@ Hal-hal baru yang saya pelajari dari lab ini:
 
 [Poin 3]
 
-### 📸 5. Bukti Penyelesaian (Screenshot)
-(Opsional: Tempel screenshot hasil akhir di sini, misal tampilan web yang berhasil diakses atau skor 100/100)
+---
 
-![Hasil Akhir]([Path ke gambar, atau biarkan kosong jika belum ada])
+[⬅️ Kembali ke Menu Utama](../README.md)

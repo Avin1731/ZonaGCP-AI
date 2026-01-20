@@ -24,7 +24,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 > **Target:** Bikin AI-powered web app (Chatbot, Image Gen).
 **Status:** 🟡 On Going
 - [ ] 01. Explore Generative AI with the Gemini API in Vertex AI
-- [ ] 02. Prompt Design in Vertex AI
+- [v] 02. Prompt Design in Vertex AI
 - [ ] 03. Enhance Gemini Model Capabilities
 - [ ] 04. Develop Gen AI Apps with Gemini and Streamlit
 - [ ] 05. Build Real World AI Applications with Gemini and Imagen

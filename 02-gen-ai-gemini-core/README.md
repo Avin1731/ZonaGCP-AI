@@ -8,7 +8,7 @@ Ini rute PALING KRUSIAL setelah backend untuk membangun Chatbot, Text & image ge
 
 ## 📋 Lab Checklist
 - [ ] [01. Explore Generative AI with the Gemini API in Vertex AI](./1-Explore-Generative-AI-with-the-Gemini-API-in-Vertex-AI/)
-- [ ] [02. Prompt Design in Vertex AI](./2-Prompt-Design-in-Vertex-AI/)
+- [v] [02. Prompt Design in Vertex AI](./2-Prompt-Design-in-Vertex-AI/)
 - [ ] [03. Enhance Gemini Model Capabilities](./3-Enhance-Gemini-Model-Capabilities/)
 - [ ] [04. Develop Gen AI Apps with Gemini and Streamlit](./4-Develop-Gen-AI-Apps-with-Gemini-and-Streamlit/)
 - [ ] [05. Build Real World AI Applications with Gemini and Imagen](./5-Build-Real-World-AI-Applications-with-Gemini-and-Imagen/)
