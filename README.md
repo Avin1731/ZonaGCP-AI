@@ -13,15 +13,16 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 
 ### 🛣️ [RUTE 1 — WEB BACKEND & SERVERLESS](./01-web-backend-serverless/)
 > **Target:** Bisa bikin & deploy backend web (API, Serverless, Logs).
-**Status:** 🟡 On Going
+**Status:** 🔴 Stoped
 - [v] 01. Develop Serverless Applications on Cloud Run
-- [ ] 02. Cloud Run Functions: 3 Ways
+- [x] 02. Cloud Run Functions: 3 Ways
 - [v] 03. Use APIs to Work with Cloud Storage
 - [v] 04. Monitoring in Google Cloud
-- [ ] 05. Monitor and Log with Google Cloud Observability
+- [v] 05. Monitor and Log with Google Cloud Observability
 
 ### 🛣️ [RUTE 2 — GENERATIVE AI & GEMINI](./02-gen-ai-gemini-core/)
 > **Target:** Bikin AI-powered web app (Chatbot, Image Gen).
+**Status:** 🟡 On Going
 - [ ] 01. Explore Generative AI with the Gemini API in Vertex AI
 - [ ] 02. Prompt Design in Vertex AI
 - [ ] 03. Enhance Gemini Model Capabilities

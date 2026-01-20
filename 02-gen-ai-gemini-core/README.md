@@ -1,7 +1,7 @@
 # 🛣️ RUTE 2 — GENERATIVE AI & GEMINI (CORE AI)
 
 **Target:** Bikin AI-powered web app (Chatbot, Image Gen).
-**Status:** ⬜ Not Started
+**Status:** 🟡 On Going
 
 ## 📌 Kenapa Rute Ini?
 Ini rute PALING KRUSIAL setelah backend untuk membangun Chatbot, Text & image generation, dan AI web app interaktif.
