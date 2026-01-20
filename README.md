@@ -8,23 +8,23 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 ### 🛣️ [RUTE 0 — FOUNDATION](./00-foundation/)
 > **Target:** Ngerti Google Cloud & siap ngoding/deploy.
 **Status:** 🟢 Completed
-- [v] 01. The Basics of Google Cloud Compute
-- [v] 02. Configure Service Accounts and IAM Roles
+- [x] 01. The Basics of Google Cloud Compute
+- [x] 02. Configure Service Accounts and IAM Roles
 
 ### 🛣️ [RUTE 1 — WEB BACKEND & SERVERLESS](./01-web-backend-serverless/)
 > **Target:** Bisa bikin & deploy backend web (API, Serverless, Logs).
 **Status:** 🔴 Stoped
-- [v] 01. Develop Serverless Applications on Cloud Run
-- [x] 02. Cloud Run Functions: 3 Ways
-- [v] 03. Use APIs to Work with Cloud Storage
-- [v] 04. Monitoring in Google Cloud
-- [v] 05. Monitor and Log with Google Cloud Observability
+- [x] 01. Develop Serverless Applications on Cloud Run
+- [] 02. Cloud Run Functions: 3 Ways
+- [x] 03. Use APIs to Work with Cloud Storage
+- [x] 04. Monitoring in Google Cloud
+- [x] 05. Monitor and Log with Google Cloud Observability
 
 ### 🛣️ [RUTE 2 — GENERATIVE AI & GEMINI](./02-gen-ai-gemini-core/)
 > **Target:** Bikin AI-powered web app (Chatbot, Image Gen).
 **Status:** 🟡 On Going
 - [ ] 01. Explore Generative AI with the Gemini API in Vertex AI
-- [v] 02. Prompt Design in Vertex AI
+- [x] 02. Prompt Design in Vertex AI
 - [ ] 03. Enhance Gemini Model Capabilities
 - [ ] 04. Develop Gen AI Apps with Gemini and Streamlit
 - [ ] 05. Build Real World AI Applications with Gemini and Imagen

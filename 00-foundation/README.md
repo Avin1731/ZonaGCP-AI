@@ -7,8 +7,8 @@
 Supaya ngerti project, service, permission. Kalau ini dilewatin → bakal bingung error auth terus.
 
 ## 📋 Lab Checklist
-- [v] [01. The Basics of Google Cloud Compute](./1-The-Basics-of-Google-Cloud-Compute/)
-- [v] [02. Configure Service Accounts and IAM Roles for Google Cloud](./2-Configure-Service-Accounts-and-IAM-Roles-for-Google-Cloud/)
+- [x] [01. The Basics of Google Cloud Compute](./1-The-Basics-of-Google-Cloud-Compute/)
+- [x] [02. Configure Service Accounts and IAM Roles for Google Cloud](./2-Configure-Service-Accounts-and-IAM-Roles-for-Google-Cloud/)
 
 ---
 [⬅️ Kembali ke Menu Utama](../README.md)
