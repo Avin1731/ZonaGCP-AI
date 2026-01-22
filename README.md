@@ -13,9 +13,9 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 
 ### 🛣️ [RUTE 1 — WEB BACKEND & SERVERLESS](./01-web-backend-serverless/)
 > **Target:** Bisa bikin & deploy backend web (API, Serverless, Logs).
-**Status:** 🔴 Stoped
+**Status:** 🟢 Completed
 - [x] 01. Develop Serverless Applications on Cloud Run
-- [ ] 02. Cloud Run Functions: 3 Ways
+- [x] 02. Cloud Run Functions: 3 Ways
 - [x] 03. Use APIs to Work with Cloud Storage
 - [x] 04. Monitoring in Google Cloud
 - [x] 05. Monitor and Log with Google Cloud Observability
