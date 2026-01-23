@@ -25,7 +25,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 > **Status:** 🟡 On Going
 - [ ] 01. Explore Generative AI with the Gemini API in Vertex AI
 - [x] 02. Prompt Design in Vertex AI
-- [ ] 03. Enhance Gemini Model Capabilities
+- [x] 03. Enhance Gemini Model Capabilities
 - [ ] 04. Develop Gen AI Apps with Gemini and Streamlit
 - [x] 05. Build Real World AI Applications with Gemini and Imagen
 - [ ] 06. Kickstarting Application Development with Gemini Code Assist
