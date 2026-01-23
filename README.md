@@ -7,13 +7,13 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 
 ### 🛣️ [RUTE 0 — FOUNDATION](./00-foundation/)
 > **Target:** Ngerti Google Cloud & siap ngoding/deploy.
-**Status:** 🟢 Completed
+> **Status:** 🟢 Completed
 - [x] 01. The Basics of Google Cloud Compute
 - [x] 02. Configure Service Accounts and IAM Roles
 
 ### 🛣️ [RUTE 1 — WEB BACKEND & SERVERLESS](./01-web-backend-serverless/)
 > **Target:** Bisa bikin & deploy backend web (API, Serverless, Logs).
-**Status:** 🟢 Completed
+> **Status:** 🟢 Completed
 - [x] 01. Develop Serverless Applications on Cloud Run
 - [x] 02. Cloud Run Functions: 3 Ways
 - [x] 03. Use APIs to Work with Cloud Storage
@@ -22,7 +22,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 
 ### 🛣️ [RUTE 2 — GENERATIVE AI & GEMINI](./02-gen-ai-gemini-core/)
 > **Target:** Bikin AI-powered web app (Chatbot, Image Gen).
-**Status:** 🟡 On Going
+> **Status:** 🟡 On Going
 - [ ] 01. Explore Generative AI with the Gemini API in Vertex AI
 - [x] 02. Prompt Design in Vertex AI
 - [ ] 03. Enhance Gemini Model Capabilities
@@ -32,6 +32,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 
 ### 🛣️ [RUTE 3 — VECTOR SEARCH & RAG](./03-vector-search-rag/)
 > **Target:** AI yang "pintar baca data sendiri" (Grounded AI).
+> **Status:** ⬜ Not Started
 - [ ] 01. Vector Search and Embeddings
 - [ ] 02. Create Embeddings, Vector Search, and RAG with BigQuery
 - [ ] 03. Implement Multimodal Vector Search with BigQuery
@@ -39,11 +40,13 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 
 ### 🛣️ [RUTE 4 — DOCUMENT AI & DATA INGESTION](./04-document-ai-ingestion/)
 > **Target:** Automasi input data dari dunia nyata (PDF/Docs).
+> **Status:** ⬜ Not Started
 - [ ] 01. Automate Data Capture at Scale with Document AI
 - [ ] 02. Prepare Data for ML APIs on Google Cloud
 
 ### 🛣️ [RUTE 5 — MACHINE LEARNING & ANALYTICS](./05-ml-analytics/)
 > **Target:** ML tanpa ribet (SQL-based ML).
+> **Status:** ⬜ Not Started
 - [ ] 01. Perform Predictive Data Analysis in BigQuery
 - [ ] 02. Engineer Data for Predictive Modeling with BigQuery ML
 - [ ] 03. Create ML Models with BigQuery ML
@@ -51,6 +54,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 
 ### 🛣️ [RUTE 6 — AI AGENTS & MULTI-AGENT SYSTEM](./06-ai-agents/)
 > **Target:** AI yang bisa berpikir & bekerja sendiri (Advanced).
+> **Status:** ⬜ Not Started
 - [ ] 01. Build Intelligent Agents with Agent Development Kit (ADK)
 - [ ] 02. Create Agents with Generative Playbooks
 - [ ] 03. Build AI Agents with Enterprise Databases
@@ -60,6 +64,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 
 ### 🛣️ [RUTE 7 — SECURITY](./07-security/)
 > **Target:** AI & web aman sebelum Production.
+> **Status:** ⬜ Not Started
 - [ ] 01. Implement Cloud Security Fundamentals on Google Cloud
 - [ ] 02. Mitigate Threats and Vulnerabilities with Security Command Center
 - [ ] 03. Introduction to Security in the World of AI
@@ -67,6 +72,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 
 ### 🛣️ [RUTE 8 — SPECIALIZATION](./08-specialization/)
 > **Target:** Pendalaman per role (Cloud Architect / DevOps / etc).
+> **Status:** ⬜ Not Started
 - [ ] 01. Gemini for Application Developers
 - [ ] 02. Gemini for Cloud Architects
 - [ ] 03. Gemini for DevOps Engineers
@@ -79,7 +85,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 ### 🛣️ [RUTE 9 — AI PRODUCTIVITY & ASSIST TOOLS](./09-ai-productivity-assist/)
 
 > **Target:** Maksimalkan produktivitas developer & workflow dengan AI assistive tools.
-
+> **Status:** ⬜ Not Started
 * [ ] 01. Agent Assist and its Gen AI Capabilities
 * [ ] 02. AI Boost Bites: Automate Tasks with Gemini and Apps Script
 * [ ] 03. Streamline App Development with Gemini Code Assist
