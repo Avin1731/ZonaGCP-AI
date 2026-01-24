@@ -22,17 +22,17 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 
 ### 🛣️ [RUTE 2 — GENERATIVE AI & GEMINI](./02-gen-ai-gemini-core/)
 > **Target:** Bikin AI-powered web app (Chatbot, Image Gen).
-> **Status:** 🟡 On Going
+> **Status:** 🔴 Stoped
 - [ ] 01. Explore Generative AI with the Gemini API in Vertex AI [!]
 - [x] 02. Prompt Design in Vertex AI
 - [x] 03. Enhance Gemini Model Capabilities
-- [ ] 04. Develop Gen AI Apps with Gemini and Streamlit
+- [ ] 04. Develop Gen AI Apps with Gemini and Streamlit [!]
 - [x] 05. Build Real World AI Applications with Gemini and Imagen
-- [ ] 06. Kickstarting Application Development with Gemini Code Assist
+- [ ] 06. Kickstarting Application Development with Gemini Code Assist [!]
 
 ### 🛣️ [RUTE 3 — VECTOR SEARCH & RAG](./03-vector-search-rag/)
 > **Target:** AI yang "pintar baca data sendiri" (Grounded AI).
-> **Status:** ⬜ Not Started
+> **Status:** 🟡 On Going
 - [ ] 01. Vector Search and Embeddings
 - [ ] 02. Create Embeddings, Vector Search, and RAG with BigQuery
 - [ ] 03. Implement Multimodal Vector Search with BigQuery
