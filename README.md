@@ -23,7 +23,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 ### 🛣️ [RUTE 2 — GENERATIVE AI & GEMINI](./02-gen-ai-gemini-core/)
 > **Target:** Bikin AI-powered web app (Chatbot, Image Gen).
 > **Status:** 🟡 On Going
-- [ ] 01. Explore Generative AI with the Gemini API in Vertex AI
+- [ ] 01. Explore Generative AI with the Gemini API in Vertex AI [!]
 - [x] 02. Prompt Design in Vertex AI
 - [x] 03. Enhance Gemini Model Capabilities
 - [ ] 04. Develop Gen AI Apps with Gemini and Streamlit
