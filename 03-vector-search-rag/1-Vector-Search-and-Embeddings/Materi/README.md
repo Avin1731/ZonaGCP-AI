@@ -6,16 +6,15 @@ Selamat datang di kursus komprehensif **Vector Search dan Embeddings**. Modul in
 
 ## 📑 Daftar Isi Materi
 
-## 📑 Daftar Isi
+1. [Pendahuluan: Era Baru Pencarian](#1-pendahuluan-era-baru-pencarian)
+2. [Deep Dive: Vector Search Basics](#2-deep-dive-vector-search-basics)
+3. [Teknik Encoding: Dari One-Hot ke Embeddings](#3-teknik-encoding-dari-one-hot-ke-embeddings)
+4. [Mekanisme Indexing & Algoritma Pencarian](#4-mekanisme-indexing--algoritma-pencarian)
+5. [Implementasi dengan Vertex AI Vector Search](#5-implementasi-dengan-vertex-ai-vector-search)
+6. [Solusi Halusinasi AI: RAG (Retrieval Augmented Generation)](#6-solusi-halusinasi-ai-rag-retrieval-augmented-generation)
+7. [Hybrid Search: Menggabungkan Terbaik dari Dua Dunia](#7-hybrid-search-menggabungkan-terbaik-dari-dua-dunia)
+8. [Kuis Evaluasi](#8-kuis-evaluasi)
 
-1. [Pendahuluan: Era Baru Pencarian](#pendahuluan-era-baru-pencarian)
-2. [Deep Dive: Vector Search Basics](#deep-dive-vector-search-basics)
-3. [Teknik Encoding: Dari One-Hot ke Embeddings](#teknik-encoding-dari-one-hot-ke-embeddings)
-4. [Mekanisme Indexing & Algoritma Pencarian](#mekanisme-indexing--algoritma-pencarian)
-5. [Implementasi dengan Vertex AI Vector Search](#implementasi-dengan-vertex-ai-vector-search)
-6. [Solusi Halusinasi AI: RAG (Retrieval Augmented Generation)](#solusi-halusinasi-ai-rag-retrieval-augmented-generation)
-7. [Hybrid Search: Menggabungkan Terbaik dari Dua Dunia](#hybrid-search-menggabungkan-terbaik-dari-dua-dunia)
-8. [Kuis Evaluasi](#kuis-evaluasi)
 
 ---
 
