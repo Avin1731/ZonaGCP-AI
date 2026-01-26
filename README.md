@@ -34,7 +34,7 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 > **Target:** AI yang "pintar baca data sendiri" (Grounded AI).
 > **Status:** 🟡 On Going
 - [x] 01. Vector Search and Embeddings
-- [ ] 02. Create Embeddings, Vector Search, and RAG with BigQuery
+- [x] 02. Create Embeddings, Vector Search, and RAG with BigQuery
 - [ ] 03. Implement Multimodal Vector Search with BigQuery
 - [ ] 04. Inspect Rich Documents with Gemini Multimodality
 

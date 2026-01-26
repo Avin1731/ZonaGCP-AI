@@ -8,7 +8,7 @@ Membuat AI kamu tidak "ngarang" (halusinasi), tapi grounded ke data. Outputnya b
 
 ## 📋 Lab Checklist
 - [x] [01. Vector Search and Embeddings](./1-Vector-Search-and-Embeddings/)
-- [ ] [02. Create Embeddings, Vector Search, and RAG with BigQuery](./2-Create-Embeddings-Vector-Search-and-RAG-with-BigQuery/)
+- [x] [02. Create Embeddings, Vector Search, and RAG with BigQuery](./2-Create-Embeddings-Vector-Search-and-RAG-with-BigQuery/)
 - [ ] [03. Implement Multimodal Vector Search with BigQuery](./3-Implement-Multimodal-Vector-Search-with-BigQuery/)
 - [ ] [04. Inspect Rich Documents with Gemini Multimodality and Multimodal RAG](./4-Inspect-Rich-Documents-with-Gemini-Multimodality/)
 
