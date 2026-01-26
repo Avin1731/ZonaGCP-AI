@@ -1,73 +1,148 @@
-# ☁️ [Judul Lab / Materi Sesuai Judul di Qwiklabs]
+# ☁️ Implement Multimodal Vector Search with BigQuery: Challenge Lab
 
-**Rute:** [Contoh: Rute 0 - Foundation]
-**Topik:** [Contoh: Compute Engine, Nginx, IAM, Cloud Storage]
-**Tanggal Pengerjaan:** [Tanggal Hari Ini]
+**Rute:** BigQuery & Generative AI
+**Topik:** Multimodal Vector Search, BigQuery ML, Object Tables, Embeddings
+**Tanggal Pengerjaan:** 27 Januari 2026
 
 ---
 
 ## 🎯 1. Overview & Tujuan
-Lab ini bertujuan untuk memahami cara [Tuliskan tujuan singkat dengan bahasa sendiri, misal: membuat VM dan menginstall web server].
+
+Challenge Lab ini menguji kemampuan dalam membangun pipeline pencarian produk yang mirip menggunakan data multimodal (gambar & teks) sepenuhnya di BigQuery. Kita menggunakan dataset gambar produk dari Cloud Storage dan melakukan pencarian semantik berdasarkan deskripsi teks.
 
 **Misi Utama:**
-1. [Misi 1: Misal, Membuat Bucket]
-2. [Misi 2: Misal, Setup VM]
-3. [Misi 3: Misal, Konfigurasi IAM]
+
+1. **Connection & IAM:** Membuat koneksi eksternal yang aman ke Vertex AI di region `europe-west4`.
+2. **Object Table:** Membuat tabel referensi di BigQuery untuk mengakses file gambar di Cloud Storage.
+3. **Multimodal Embeddings:** Mengubah gambar produk menjadi vektor menggunakan model `multimodalembedding@001`.
+4. **Vector Search:** Melakukan pencarian produk yang mirip dengan kata kunci "Men Sweaters".
 
 ---
 
 ## 🛠️ 2. Langkah-Langkah & Solusi
 
-### 🔹 Task 1: [Nama Task Sesuai Lab]
-* **Deskripsi:** [Jelaskan apa yang dilakukan secara singkat]
-* **Konfigurasi GUI:**
-  * Menu: `[Nama Menu, misal: Compute Engine > VM Instances]`
-  * Setting A: `[Value, misal: e2-medium]`
-  * Setting B: `[Value, misal: us-central1]`
+### 🔹 Task 1: Create a Source Connection and Grant IAM Permissions
 
-### 🔹 Task 2: [Nama Task Sesuai Lab]
-* **Perintah CLI / Script:**
-  *(Jalankan perintah berikut di Cloud Shell / SSH)*
-```bash
-  # [Komentar singkat tentang command ini]
-  [Paste command code di sini]
+* **Deskripsi:** Membuat jembatan koneksi agar BigQuery bisa mengakses model Vertex AI di region Eropa.
+* **Konfigurasi GUI (BigQuery):**
+* Menu: `BigQuery > + ADD DATA > External data source`
+* Connection type: `Vertex AI remote models, remote functions, BigLake and Spanner`
+* Connection ID: `vector_conn`
+* Location: `europe-west4` (⚠️ **Wajib region ini**)
+* **Action:** Klik **Create connection**.
 
-  # Contoh:
-  # sudo apt update
-  # sudo apt install nginx -y
+
+* **Konfigurasi GUI (IAM & Admin):**
+* *Step Penting:* Copy Service Account ID dari detail connection `vector_conn`.
+* Menu: `IAM & Admin > IAM > Grant Access`
+* New Principals: `[Paste Service Account ID]`
+* **Roles:**
+1. `BigQuery Data Owner`
+2. `Storage Object Viewer`
+3. `Vertex AI User`
+
+
+* **Action:** Klik **Save**.
+
+
+
+### 🔹 Task 2: Create an Object Table
+
+* **Deskripsi:** Membuat tabel eksternal yang membaca metadata file gambar dari bucket Cloud Storage.
+* **Perintah SQL:**
+
+```sql
+CREATE OR REPLACE EXTERNAL TABLE `qwiklabs-gcp-01-9bd3d23f752f.gcc_bqml_dataset.gcc_image_object_table`
+WITH CONNECTION `qwiklabs-gcp-01-9bd3d23f752f.europe-west4.vector_conn`
+OPTIONS (
+  object_metadata = 'SIMPLE',
+  uris = ['gs://qwiklabs-gcp-01-9bd3d23f752f/*']
+);
+
 ```
-### 🔹 Task 3: [Nama Task Sesuai Lab]
-Langkah:
 
-[Langkah 1]
+*(Ganti Project ID sesuai dengan lab environment)*
 
-[Langkah 2]
+### 🔹 Task 3: Generate Embeddings
 
-[Langkah 3]
+* **Deskripsi:** Membuat model remote dan menghasilkan embedding (vektor) dari gambar-gambar di Object Table.
+* **Perintah SQL (Create Model):**
 
-(Tambahkan Task lain sesuai kebutuhan)
+```sql
+CREATE OR REPLACE MODEL `qwiklabs-gcp-01-9bd3d23f752f.gcc_bqml_dataset.gcc_embedding`
+REMOTE WITH CONNECTION `qwiklabs-gcp-01-9bd3d23f752f.europe-west4.vector_conn`
+OPTIONS (
+  ENDPOINT = 'multimodalembedding@001'
+);
+
+```
+
+* **Perintah SQL (Generate Image Embeddings):**
+
+```sql
+CREATE OR REPLACE TABLE `qwiklabs-gcp-01-9bd3d23f752f.gcc_bqml_dataset.gcc_retail_store_embeddings` AS
+SELECT *, REGEXP_EXTRACT(uri, r'[^/]+$') as product_name
+FROM ML.GENERATE_EMBEDDING(
+  MODEL `qwiklabs-gcp-01-9bd3d23f752f.gcc_bqml_dataset.gcc_embedding`,
+  TABLE `qwiklabs-gcp-01-9bd3d23f752f.gcc_bqml_dataset.gcc_image_object_table`
+);
+
+```
+
+### 🔹 Task 4: Run a Vector Search
+
+* **Deskripsi:** Mencari gambar produk yang paling relevan dengan query teks "Men Sweaters".
+* **Perintah SQL:**
+
+```sql
+CREATE OR REPLACE TABLE `qwiklabs-gcp-01-9bd3d23f752f.gcc_bqml_dataset.gcc_vector_search_table` AS
+SELECT
+  base.uri,
+  base.product_name,
+  base.content_type,
+  distance
+FROM
+  VECTOR_SEARCH(
+    TABLE `qwiklabs-gcp-01-9bd3d23f752f.gcc_bqml_dataset.gcc_retail_store_embeddings`,
+    'ml_generate_embedding_result',
+    (
+      SELECT ml_generate_embedding_result as embedding_col
+      FROM ML.GENERATE_EMBEDDING(
+        MODEL `qwiklabs-gcp-01-9bd3d23f752f.gcc_bqml_dataset.gcc_embedding`,
+        (SELECT 'Men Sweaters' AS content),
+        STRUCT(TRUE AS flatten_json_output)
+      )
+    ),
+    top_k => 3,
+    distance_type => 'COSINE'
+  );
+
+```
+
+---
 
 ### 🐛 3. Troubleshooting / Masalah yang Dihadapi
-(Bagian ini opsional, isi jika menemukan error)
 
-Error: [Tulis pesan error yang muncul]
+**Error:** `Invalid region for connection` atau Model tidak ditemukan.
 
-Penyebab: [Analisa kenapa error, misal: Salah region atau typo command]
+* **Penyebab:** Salah memilih lokasi saat membuat Connection. Lab ini mewajibkan region `europe-west4`, bukan `US`.
+* **Solusi:** Hapus connection yang salah, buat ulang dengan memilih region `europe-west4`.
 
-Solusi:
+**Error:** `Access Denied` saat menjalankan query.
 
-[Jelaskan cara kamu memperbaikinya]
+* **Penyebab:** Service Account belum diberikan izin IAM yang lengkap atau API belum di-enable.
+* **Solusi:** Pastikan Service Account connection memiliki 3 role wajib (`BigQuery Data Owner`, `Storage Object Viewer`, `Vertex AI User`).
+
+---
 
 ### 📝 4. Catatan Penting (Key Takeaways)
+
 Hal-hal baru yang saya pelajari dari lab ini:
 
-[Poin 1: Misal, Ternyata VM tidak bisa diakses kalau firewall belum dibuka]
+1. **Multimodal Embedding:** Kita bisa mencari gambar menggunakan teks ("Men Sweaters") karena keduanya berada dalam ruang vektor yang sama (multimodal embedding space).
+2. **Object Table:** Fitur BigQuery yang sangat berguna untuk mengolah *unstructured data* (gambar, audio, PDF) yang tersimpan di GCS seolah-olah data tabel biasa.
+3. **Region Specific:** Penting untuk selalu memperhatikan lokasi region resource (Connection, Dataset, Model) agar bisa saling berkomunikasi.
 
-[Poin 2: Misal, Bucket name harus unik secara global]
+---
 
-[Poin 3]
-
-### 📸 5. Bukti Penyelesaian (Screenshot)
-(Opsional: Tempel screenshot hasil akhir di sini, misal tampilan web yang berhasil diakses atau skor 100/100)
-
-![Hasil Akhir]([Path ke gambar, atau biarkan kosong jika belum ada])
+[⬅️ Kembali ke Menu Utama](../README.md)

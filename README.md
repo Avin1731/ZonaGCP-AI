@@ -35,8 +35,8 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 > **Status:** 🟡 On Going
 - [x] 01. Vector Search and Embeddings
 - [x] 02. Create Embeddings, Vector Search, and RAG with BigQuery
-- [ ] 03. Implement Multimodal Vector Search with BigQuery [On Progress]
-- [ ] 04. Inspect Rich Documents with Gemini Multimodality
+- [x] 03. Implement Multimodal Vector Search with BigQuery
+- [ ] 04. Inspect Rich Documents with Gemini Multimodality [On Progress]
 
 ### 🛣️ [RUTE 4 — DOCUMENT AI & DATA INGESTION](./04-document-ai-ingestion/)
 > **Target:** Automasi input data dari dunia nyata (PDF/Docs).
