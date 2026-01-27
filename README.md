@@ -32,16 +32,16 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 
 ### 🛣️ [RUTE 3 — VECTOR SEARCH & RAG](./03-vector-search-rag/)
 > **Target:** AI yang "pintar baca data sendiri" (Grounded AI).
-> **Status:** 🟡 On Going
+> **Status:** 🟢 Completed
 - [x] 01. Vector Search and Embeddings
 - [x] 02. Create Embeddings, Vector Search, and RAG with BigQuery
 - [x] 03. Implement Multimodal Vector Search with BigQuery
-- [ ] 04. Inspect Rich Documents with Gemini Multimodality [On Progress]
+- [x] 04. Inspect Rich Documents with Gemini Multimodality
 
 ### 🛣️ [RUTE 4 — DOCUMENT AI & DATA INGESTION](./04-document-ai-ingestion/)
 > **Target:** Automasi input data dari dunia nyata (PDF/Docs).
-> **Status:** ⬜ Not Started
-- [ ] 01. Automate Data Capture at Scale with Document AI
+> **Status:** 🟡 On Going
+- [ ] 01. Automate Data Capture at Scale with Document AI [On Progress]
 - [ ] 02. Prepare Data for ML APIs on Google Cloud
 
 ### 🛣️ [RUTE 5 — MACHINE LEARNING & ANALYTICS](./05-ml-analytics/)

@@ -1,7 +1,7 @@
 # 🛣️ RUTE 4 — DOCUMENT AI & DATA INGESTION
 
 **Target:** Automasi input data dari dunia nyata (PDF/Docs).
-**Status:** ⬜ Not Started
+**Status:** 🟡 On Going
 
 ## 📌 Kenapa Rute Ini?
 Cocok untuk sistem administrasi, finance, dan arsip. Mengubah dokumen mentah (PDF/Scan) menjadi data terstruktur.
