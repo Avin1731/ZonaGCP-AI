@@ -41,8 +41,8 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 ### 🛣️ [RUTE 4 — DOCUMENT AI & DATA INGESTION](./04-document-ai-ingestion/)
 > **Target:** Automasi input data dari dunia nyata (PDF/Docs).
 > **Status:** 🟡 On Going
-- [ ] 01. Automate Data Capture at Scale with Document AI [On Progress]
-- [ ] 02. Prepare Data for ML APIs on Google Cloud
+- [x] 01. Automate Data Capture at Scale with Document AI
+- [ ] 02. Prepare Data for ML APIs on Google Cloud [On Progress]
 
 ### 🛣️ [RUTE 5 — MACHINE LEARNING & ANALYTICS](./05-ml-analytics/)
 > **Target:** ML tanpa ribet (SQL-based ML).
