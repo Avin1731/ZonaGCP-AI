@@ -1,7 +1,7 @@
 # 🛣️ RUTE 5 — MACHINE LEARNING & ANALYTICS
 
 **Target:** ML tanpa ribet (SQL-based ML).
-**Status:** ⬜ Not Started
+**Status:** 🟡 On Going
 
 ## 📌 Kenapa Rute Ini?
 Membuat model Forecasting, Classification, dan Insight data langsung menggunakan SQL di BigQuery tanpa setup server ML yang rumit.

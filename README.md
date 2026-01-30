@@ -42,12 +42,12 @@ Repository ini berisi dokumentasi perjalanan belajar, eksperimen, dan kode solus
 > **Target:** Automasi input data dari dunia nyata (PDF/Docs).
 > **Status:** 🟡 On Going
 - [x] 01. Automate Data Capture at Scale with Document AI
-- [ ] 02. Prepare Data for ML APIs on Google Cloud [On Progress]
+- [ ] 02. Prepare Data for ML APIs on Google Cloud [On Progress] Problem !
 
 ### 🛣️ [RUTE 5 — MACHINE LEARNING & ANALYTICS](./05-ml-analytics/)
 > **Target:** ML tanpa ribet (SQL-based ML).
-> **Status:** ⬜ Not Started
-- [ ] 01. Perform Predictive Data Analysis in BigQuery
+> **Status:** 🟡 On Going
+- [ ] 01. Perform Predictive Data Analysis in BigQuery [On Progress]
 - [ ] 02. Engineer Data for Predictive Modeling with BigQuery ML
 - [ ] 03. Create ML Models with BigQuery ML
 - [ ] 04. Use Machine Learning APIs on Google Cloud
