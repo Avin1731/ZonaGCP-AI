@@ -8,7 +8,7 @@ Cocok untuk sistem administrasi, finance, dan arsip. Mengubah dokumen mentah (PD
 
 ## 📋 Lab Checklist
 - [x] [01. Automate Data Capture at Scale with Document AI](./1-Automate-Data-Capture-at-Scale-with-Document-AI/)
-- [ ] [02. Prepare Data for ML APIs on Google Cloud](./2-Prepare-Data-for-ML-APIs-on-Google-Cloud/) Problem !
+- [ ] [02. Prepare Data for ML APIs on Google Cloud](./2-Prepare-Data-for-ML-APIs-on-Google-Cloud/) Problematik !
 
 ---
 [⬅️ Kembali ke Menu Utama](../README.md)
